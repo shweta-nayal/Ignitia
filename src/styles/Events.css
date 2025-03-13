@@ -2,14 +2,13 @@
 .events-page {
     text-align: center;
     background-color: #0a0f1f;
-    /* Darker Shade of Blue */
     min-height: 100vh;
     padding: 50px 0;
     position: relative;
     transition: filter 0.3s ease;
 }
 
-/* Blur the background when popup is open */
+/* Blur background when popup opens */
 .events-page.blurred::before {
     content: "";
     position: fixed;
@@ -104,7 +103,6 @@
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
     text-align: center;
     z-index: 1001;
-    /* Above blurred background */
 }
 
 .popup-content h2 {
