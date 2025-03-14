@@ -18,10 +18,12 @@ function Home() {
       <div className="background-blur"></div>  
       <div className="background"></div>
       <div className={`overlay ${loading ? "hidden" : ""}`}>
-        <h1 className="event-name">Ignitia X Amogh</h1>
-        <button className="btn btn-primary btn-lg mt-4" onClick={handleButtonClick}>
-          Visit Events Page
-        </button>
+        {/* <h1 className="event-name">Ignitia X Amogh</h1> */}
+        <div className="button-container">
+          <button className="btn btn-primary btn-lg mt-4" onClick={handleButtonClick}>
+            Visit Events Page
+          </button>
+        </div>
       </div>
 
       {loading && (

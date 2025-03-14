@@ -21,6 +21,7 @@
     z-index: -2;
 }
 
+/* Main background image */
 .background {
     position: absolute;
     width: 100vw;
@@ -45,11 +46,10 @@
     padding: 20px;
 }
 
-/* Adjusted Event Name Position */
+/* Event Name */
 .event-name {
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: bold;
-    margin-top: 80px;
     color: rgb(255, 255, 255);
     text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
     opacity: 0;
@@ -57,12 +57,21 @@
     margin: 0 auto;
 }
 
-/* Adjusted Button Position */
+/* Position the button near the bottom of the visible background */
+.button-container {
+    position: absolute;
+    bottom: 8%;
+    /* Adjust this value to move it closer/farther from the bottom */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Button Styling */
 .btn-primary {
-    padding: clamp(8px, 2vw, 12px) clamp(14px, 3vw, 20px);
-    font-size: clamp(1rem, 2vw, 1.3rem);
+    padding: clamp(12px, 6vw, 12px) clamp(64px, 6vw, 60px);
+    font-size: clamp(1.3rem, 3vw, 1.5rem);
     font-weight: 600;
-    margin-top: 120px;
     background: linear-gradient(45deg, #e5e20d, #ff4b2b);
     border: none;
     border-radius: 50px;
@@ -140,5 +149,18 @@
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .button-container {
+        bottom: 5%;
+        /* Adjusts position for mobile screens */
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 10px 18px;
     }
 }
