@@ -1,4 +1,5 @@
-html,body{
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -8,12 +9,10 @@ html,body{
 /* Events Page */
 .events-page {
     text-align: center;
-    /* background-color: #0a0f1f; */
     background-image: url('../assets/ebg3.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-        /* Keeps background in place while scrolling */
     min-height: 100vh;
     width: 100%;
     max-width: 100vw;
@@ -22,7 +21,7 @@ html,body{
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-    position:relative;
+    position: relative;
     transition: filter 0.3s ease;
 }
 
@@ -117,7 +116,8 @@ html,body{
     transform: translate(-50%, -50%);
     background: white;
     padding: 20px;
-    width: 750px;
+    width: 80%;
+    max-width: 750px;
     border-radius: 10px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -163,6 +163,37 @@ html,body{
     font-size: 30px;
     cursor: pointer;
     color: rgb(155, 13, 25);
+}
+
+/* Responsive Popup */
+@media screen and (max-width: 768px) {
+    .popup {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .popup-content h2 {
+        font-size: 1.8em;
+    }
+
+    .popup-content p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .popup {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .popup-content h2 {
+        font-size: 1.5em;
+    }
+
+    .popup-content p {
+        font-size: 0.9rem;
+    }
 }
 
 /* Subtle glow animation */

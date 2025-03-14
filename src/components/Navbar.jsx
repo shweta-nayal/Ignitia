@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
-import enigmaLogo from "../assets/dseu.jpg";
-import dseuLogo from "../assets/dseu.jpg";
+import enigmaLogo from "../assets/dseu1.png";
+import dseuLogo from "../assets/dseu1.png";
 
 function Navbar() {
   return (

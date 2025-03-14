@@ -11,7 +11,7 @@ import buisnessImg from "../assets/buisness.jpeg";
 
 const eventsData = [
   { 
-    name: "Think-A-Ton", 
+    name: "THINK-A-TON", 
     image: ideathonImg, 
     description: (
       <>
@@ -151,7 +151,7 @@ const eventsData = [
     registerLink: "https://docs.google.com/forms/d/1PPZ6TzNgEuKtUFl1mzEk0JdWCXmjooJMokxpeeYgvUY/edit",
     },
   { 
-    name: "Business Quiz", 
+    name: "BUISNESS QUIZ", 
     image: buisnessImg, 
     description: (
       <>
@@ -178,7 +178,7 @@ const eventsData = [
     registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSfzxzhlXimR2iBUyBFPcxiqHoLO7WYEDa8yfHvlKdcKzSaqrw/viewform" 
   },
   { 
-    name: "Echoes in Pixels", 
+    name: "ECHOES IN PIXELS", 
     image: posterImg, 
     description: (
       <>
@@ -204,7 +204,7 @@ const eventsData = [
     registerLink: "https://docs.google.com/forms/d/1YhBrz5luzx43T_tJlDvfgLNWAAT0Upq0dFb4lL6QOHM/edit" 
   },
   { 
-    name: "Web Craze", 
+    name: "WEB CRAZE", 
     image: webImg, 
     description: (
       <>

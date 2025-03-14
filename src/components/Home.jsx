@@ -10,7 +10,7 @@ function Home() {
     setLoading(true);
     setTimeout(() => {
       navigate("/events"); 
-    }, 1400);
+    }, 1000);
   };
 
   return (
