@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
-import enigmaLogo from "../assets/enigma.jpg";
+import enigmaLogo from "../assets/dseu.jpg";
 import dseuLogo from "../assets/dseu.jpg";
 
 function Navbar() {
