@@ -15,7 +15,7 @@ function Home() {
 
   return (
     <div className={`home-container ${loading ? "blurred" : ""}`}>
-      <div class="background-blur"></div>  
+      <div className="background-blur"></div>  
       <div className="background"></div>
       <div className={`overlay ${loading ? "hidden" : ""}`}>
         <h1 className="event-name">Ignitia X Amogh</h1>
