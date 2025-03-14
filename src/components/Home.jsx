@@ -9,12 +9,13 @@ function Home() {
   const handleButtonClick = () => {
     setLoading(true);
     setTimeout(() => {
-      navigate("/events"); // Redirect after 3.5s
-    }, 3500);
+      navigate("/events"); 
+    }, 1500);
   };
 
   return (
     <div className={`home-container ${loading ? "blurred" : ""}`}>
+      <div class="background-blur"></div>  
       <div className="background"></div>
       <div className={`overlay ${loading ? "hidden" : ""}`}>
         <h1 className="event-name">Ignitia X Amogh</h1>

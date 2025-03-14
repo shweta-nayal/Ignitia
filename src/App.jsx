@@ -1,10 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar"; 
 import Home from "./components/Home";
 import Events from "./components/Events";
 
-function App() {
+function AppContent() {
   const location = useLocation();
 
   return (
@@ -18,6 +18,10 @@ function App() {
       </Routes>
     </>
   );
+}
+
+function App() {
+  return <AppContent />;
 }
 
 export default App;

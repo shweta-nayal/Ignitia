@@ -4,6 +4,7 @@ import ideathonImg from "../assets/ideathon.jpeg";
 import bgmiImg from "../assets/bgmi.jpeg";
 import webImg from "../assets/web.jpeg";
 import logoImg from "../assets/logo.jpeg";
+import posterImg from "../assets/poster.jpeg";
 import quizImg from "../assets/quiz.jpeg";
 import spellbeeImg from "../assets/spellbee.jpeg";
 import buisnessImg from "../assets/buisness.jpeg";
@@ -17,19 +18,20 @@ const eventsData = [
         🚀 <strong>IDEATHON 2025 – Unleash Your Innovation..!!</strong> 💡 <br /><br />
         Enigma presents IDEATHON 2025, a platform for forward-thinking individuals to ideate, collaborate, and innovate.
         <br /><br />
-        <strong>Why Participate?</strong>
-        <ul>
-          <li>💡 Innovate with Purpose – Tackle global issues with groundbreaking ideas.</li>
-          <li>🤝 Collaborate & Network – Work with like-minded individuals and industry experts.</li>
-          <li>🏆 Compete & Win – Showcase your potential and earn recognition with exciting prizes.</li>
+        <strong>Why Participate..??</strong>
+        <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
+          <li>💡 <strong>Innovate with Purpose –</strong> Tackle global issues with groundbreaking ideas.</li>
+          <li>🤝 <strong>Collaborate & Network –</strong> Work with like-minded individuals and industry experts.</li>
+          <li>🏆 <strong>Compete & Win –</strong> Showcase your potential and earn recognition with exciting prizes.</li>
         </ul>
-        <strong>What Awaits You?</strong>
-        <ul>
-          <li>🌍 Impact-Driven Innovation – Create solutions with real-world applications.</li>
-          <li>📈 Skill Development – Enhance your problem-solving and analytical abilities.</li>
-          <li>🔗 Exclusive Opportunities – Gain exposure, build connections, and learn from professionals.</li>
+        <strong>What Awaits You..??</strong>
+        <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
+          <li>🌍 <strong>Impact-Driven Innovation –</strong> Create solutions with real-world applications.</li>
+          <li>📈 <strong>Skill Development –</strong> Enhance your problem-solving and analytical abilities.</li>
+          <li>🔗 <strong>Exclusive Opportunities –</strong> Gain exposure, build connections, and learn from professionals.</li>
         </ul>
         <strong>📅 DATE:</strong> 20<sup>th</sup> March 2025 <br />
+        <strong>🕒 Timings:</strong> 11 a.m. – 4 p.m. <br />
         <strong>📍 VENUE:</strong> Bhai Parmanand Shakarpur Campus: II, DSEU
       </>
     ),
@@ -38,94 +40,195 @@ const eventsData = [
   { 
     name: "BGMI", 
     image: bgmiImg, 
-    description: "Battle it out in the ultimate BGMI tournament!", 
-    registerLink: "https://forms.gle/your-bgmi-link" 
+    description: (
+  <>
+    🚀 <strong>Loot, Shoot, Dominate...!!</strong> 🎮 <br /><br />
+    The <strong>BGMI Tournament – March 20, 2025</strong> is here! Get ready for high-intensity battles, top-tier competition, and epic rewards.  
+    <br /><br />
+    <strong>Why Join?</strong>
+    <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
+      <li>🏆 <strong>Epic Showdowns</strong> – Test your skills in heart-pounding battles.</li>
+      <li>💥 <strong>Top-Tier Competition</strong> – Face off against the best players.</li>
+      <li>🎁 <strong>Big Prizes</strong> – More than just bragging rights await!</li>
+    </ul>
+    <strong>What Awaits You?</strong>
+    <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
+      <li>🌟 <strong>Unleash Your Inner Warrior</strong> – Prove your dominance.</li>
+      <li>🔥 <strong>Squad Up & Win</strong> – Teamwork is the key to victory.</li>
+      <li>🎮 <strong>Unforgettable Moments</strong> – Learn from the best & make history.</li>
+    </ul>
+    <strong>📅 DATE:</strong> 20<sup>th</sup> March 2025 <br />
+        <strong>🕒 Timings:</strong> 2 p.m. – 4 p.m. <br />
+    <strong>📍 VENUE:</strong> Bhai Parmanand Shakarpur Campus: II, DSEU
+  </>
+),
+ 
+    registerLink: "https://docs.google.com/forms/d/1n4P6SydYcjOMHGeB8PHbNZBsw8jGsHf9ngH04aiJ0aM/edit" 
   },
   { 
     name: "LOGOVATION", 
     image: logoImg, 
-    description: `🎨 LOGOVATION 2025 – Innovate, Design & Conquer! ✨
-
-        Enigma presents LOGOVATION 2025, a digital logo design contest that celebrates creativity and innovation. 
-        This is your chance to craft the identity of tomorrow, showcasing your artistic skills and visionary ideas.
-        
-        💡 Why Participate?
-        🎨 Design with Purpose – Create logos that leave a lasting impression.
-        🌟 Showcase Your Talent – Put your creative genius on display & get recognized.
-        🏆 Compete & Win – Clear 3 rounds, stand out, and win exciting prizes!
-        
-        🚀 What Awaits You?
-        🎭 Creative Impact – Develop designs that resonate with the world using Canva & Figma.
-        📈 Skill Enhancement – Sharpen your design & branding abilities.
-        🌐 Exclusive Opportunities – Build your portfolio & gain industry recognition.
-        
-        📅 DATE: 20th March 2025
-        🕛 TIMINGS: 12 PM - 2 PM
-        📍 VENUE: Bhai Parmanand Shakarpur Campus-II, DSEU`,
-        registerLink: "https://your-registration-link.com",
+    description: (
+      <>
+        🚀 <strong>Logovation 2025 - Inovate your own logos and unleash your Creativity..!!✨</strong> 💡 <br /><br />
+        Enigma presents Logovation 2025, a digital logo design contest that celebrates the power of design and creativity. 
+        <br /><br />
+        <strong>Why Participate..??</strong>
+        <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
+          <li>🎨<strong>Design with Purpose -</strong> Create logos that leave a lasting impression and inspire. </li>
+          <li>🤝 <strong>Showcase Your Talent -</strong> Put your creative genius mind on display and get recognized.</li>
+          <li>🏆<strong>Compete & Win -</strong> Clear all the 3 rounds, stand out and win exciting prizes while gaining exposure.</li>
+        </ul>
+        <strong>What Awaits You..??</strong>
+        <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
+          <li>🌍 <strong>Creative Impact –</strong> Develop a design that resonates with the world using Canva and Figma. </li>
+          <li>📈 <strong>Skill Enhancement –</strong> Enhance your problem-solving and analytical abilities.</li>
+          <li>🔗 Exclusive Opportunities – Build your portfolio and gain recognition from industry experts.</li>
+        </ul>
+        <strong>📅 DATE:</strong> 20<sup>th</sup> March 2025 <br />
+        <strong>🕒 Timings:</strong> 12 p.m. – 2 p.m. <br />
+        <strong>📍 VENUE:</strong> Bhai Parmanand Shakarpur Campus: II, DSEU
+      </>
+    ),
+    registerLink: "https://docs.google.com/forms/d/1wS21e_8Cln1Fg1UuuOLhWJi2DigaNf23jGr9IPZClTY/edit",
     },
   { 
     name: "QUIZORA", 
     image: quizImg, 
-    description: `🌟 QUIZORA 2025 – Think. Answer. Conquer! 🧠💻
-
-        Enigma presents QUIZORA 2025, the ultimate Tech Quiz Challenge where knowledge meets competition! 
-        Whether you're a tech geek, coding wizard, or trivia enthusiast, this is your chance to prove your 
-        expertise and win exciting prizes!
-        
-        💡 Why Participate?
-        🔍 Test Your Tech IQ – Challenge yourself with mind-bending tech trivia.
-        🤝 Compete & Collaborate – Go head-to-head with the sharpest minds.
-        🏆 Win Big – Earn recognition, prizes, and the title of Tech Quiz Champion!
-        
-        🚀 What Awaits You?
-        📚 Diverse Topics – Covering programming, AI, cybersecurity, and more!
-        💡 Brainstorm & Strategize – Use logic, speed, and teamwork to dominate.
-        🔗 Exclusive Opportunities – Network with fellow tech enthusiasts and experts.
-        
-        📅 DATE: 20th March 2025
-        📍 VENUE: Bhai Parmanand, Shakarpur Campus-II, DSEU`,
-        registerLink: "https://your-registration-link.com",
+    description: (
+      <>
+        🌟 <strong>QUIZORA 2025 – Think. Answer. Conquer! 🧠💻</strong> 💡 <br /><br />
+        Enigma presents QUIZORA 2025, the ultimate Tech Quiz Challenge where knowledge meets competition..!!
+        <br /><br />
+        <strong>Why Participate..??</strong>
+        <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
+          <li>🔍 <strong>Test Your Tech IQ –</strong> Challenge yourself with mind-bending tech trivia.</li>
+          <li>🤝 <strong>Compete & Collaborate –</strong> Go head-to-head with the sharpest minds.</li>
+          <li>🏆 <strong>Win Big –</strong> Earn recognition, prizes, and the title of Tech Quiz Champion!</li>
+        </ul>
+        <strong>What Awaits You..??</strong>
+        <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
+          <li><strong>📚 Diverse Questions –</strong> Covering programming, AI, cybersecurity, and more!</li>
+          <li><strong>💡 Brainstorm & Strategize –</strong> Use logic, speed, and teamwork to dominate.</li>
+          <li><strong>🔗 Exclusive Opportunities –</strong> Network with fellow tech enthusiasts and experts.</li>
+        </ul>
+        <strong>📅 DATE:</strong> 20<sup>th</sup> March 2025 <br />
+        <strong>🕒 Timings:</strong> 12 p.m. – 1 p.m. <br />
+        <strong>📍 VENUE:</strong> Bhai Parmanand Shakarpur Campus: II, DSEU
+      </>
+    ),
+    registerLink: "https://docs.google.com/forms/d/1WvSbKAXDG8ypLaz3SbGpeRc_9vcGiPcQPX1eGa-HV_I/edit",
     },
   { 
     name: "SPELLBOUND", 
     image: spellbeeImg, 
-    description: `📚 SPELLBOUND – The Ultimate Spell Bee Contest! 🧠
-
-        Join SPELLBOUND, a prestigious spelling competition designed to enhance language proficiency, 
-        expand vocabulary, and boost cognitive skills. This event offers a fun yet competitive platform 
-        for participants to showcase their linguistic abilities.
+    description: (
+      <>
+        🚀 <strong>📚 Spellbound Spell Bee Contest</strong> 💡 <br /><br />
+         Cultivating Communication and Cognitive Excellence 
+         <br /><br />
+        <strong>Why Participate..??</strong>
+        <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
+          <li>
+            ✅ <strong>Comprehensive Vocabulary Challenges –</strong> Engage in spelling rounds designed to test and expand linguistic knowledge.
+          </li>
+          <li>
+            ✅ <strong>Cognitive Development –</strong> Boost mental agility, concentration, and the ability to perform under pressure.
+          </li>
+          <li>
+            ✅ <strong>Educational Enrichment – </strong> Learn about etymology, word origins, and the nuances of the English language.
+          </li>
+          <li>
+            ✅ <strong>Showcase Linguistic Abilities –</strong> Compete in an engaging environment to enhance language proficiency.
+          </li>
+        </ul>
         
-        🌟 Why Participate?
-        📖 Comprehensive Vocabulary Challenges – Test & expand your linguistic knowledge.
-        🧠 Cognitive Development – Enhance mental agility, concentration & quick thinking.
-        📚 Educational Enrichment – Learn about word origins, etymology & advanced vocabulary.
-        
-        🚀 How to Prepare?
-        ✔ Register Now: Secure your participation by signing up [here](https://docs.google.com/forms/d/1PPZ6TzNgEuKtUFl1mzEk0JdWCXmjooJMokxpeeYgvUY/edit).
-        ✔ Enhance Your Vocabulary: Dedicate time to word learning & spelling practice.
-        ✔ Compete with Confidence: Approach the contest with enthusiasm & a willingness to learn!
-        
-        📍 Join us and celebrate the power of words & the pursuit of linguistic excellence!`,
-        registerLink: "https://docs.google.com/forms/d/1PPZ6TzNgEuKtUFl1mzEk0JdWCXmjooJMokxpeeYgvUY/edit",
+        <strong>📅 DATE:</strong> 20<sup>th</sup> March 2025 <br />
+        <strong>🕒 Timings:</strong> 11 a.m. – 12 p.m. <br />
+        <strong>📍 VENUE:</strong> Bhai Parmanand Shakarpur Campus: II, DSEU
+      </>
+    ),
+    registerLink: "https://docs.google.com/forms/d/1PPZ6TzNgEuKtUFl1mzEk0JdWCXmjooJMokxpeeYgvUY/edit",
     },
   { 
     name: "Business Quiz", 
     image: buisnessImg, 
-    description: "Prove your business acumen with this quiz!", 
-    registerLink: "https://forms.gle/your-businessquiz-link" 
+    description: (
+      <>
+        🚀 <strong>IDEATHON 2025 – Unleash Your Innovation..!!</strong> 💡 <br /><br />
+        Enigma presents IDEATHON 2025, a platform for forward-thinking individuals to ideate, collaborate, and innovate.
+        <br /><br />
+        <strong>Why Participate..??</strong>
+        <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
+          <li>💡 Innovate with Purpose – Tackle global issues with groundbreaking ideas.</li>
+          <li>🤝 Collaborate & Network – Work with like-minded individuals and industry experts.</li>
+          <li>🏆 Compete & Win – Showcase your potential and earn recognition with exciting prizes.</li>
+        </ul>
+        <strong>What Awaits You..??</strong>
+        <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
+          <li>🌍 Impact-Driven Innovation – Create solutions with real-world applications.</li>
+          <li>📈 Skill Development – Enhance your problem-solving and analytical abilities.</li>
+          <li>🔗 Exclusive Opportunities – Gain exposure, build connections, and learn from professionals.</li>
+        </ul>
+        <strong>📅 DATE:</strong> 20<sup>th</sup> March 2025 <br />
+        <strong>🕒 Timings:</strong> 12 p.m. – 2 p.m. <br />
+        <strong>📍 VENUE:</strong> Bhai Parmanand Shakarpur Campus: II, DSEU
+      </>
+    ),
+    registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSfzxzhlXimR2iBUyBFPcxiqHoLO7WYEDa8yfHvlKdcKzSaqrw/viewform" 
   },
   { 
-    name: "Digital Poster Design", 
-    image: "/images/digital-poster.jpg", 
-    description: "Create stunning posters using digital tools!", 
-    registerLink: "https://forms.gle/your-digitalposter-link" 
+    name: "Echoes in Pixels", 
+    image: posterImg, 
+    description: (
+      <>
+        🚀 <strong>🖌️ Digital Poster Design Contest</strong> 💡 <br /><br />
+        Unleash Your Creativity & Win Big! 🎨
+        <br /><br />
+        <strong>Why Participate..??</strong>
+        <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
+          <li>🎁 Exciting Rewards – Stand a chance to win certificates & amazing prizes!</li>
+          <li>🖥️ Skill Enhancement – Improve your digital design, composition, and storytelling abilities.</li>
+          <li>🏆 Recognition & Exposure – Get your work noticed and appreciated.</li>
+        </ul>
+        <strong>Event Highlights : </strong>
+        <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
+          <li>📌 Theme-Based Poster Challenges – Design posters based on thought-provoking themes.</li>
+          <li>🎭 Platform for Young Creators – A stage to express and experiment with designs.</li>
+        </ul>
+        <strong>📅 DATE:</strong> 20<sup>th</sup> March 2025 <br />
+        <strong>🕒 Timings:</strong> 12 p.m. – 2 p.m. <br />
+        <strong>📍 VENUE:</strong> Bhai Parmanand Shakarpur Campus: II, DSEU
+      </>
+    ),
+    registerLink: "https://docs.google.com/forms/d/1YhBrz5luzx43T_tJlDvfgLNWAAT0Upq0dFb4lL6QOHM/edit" 
   },
   { 
-    name: "Web Designing", 
+    name: "Web Craze", 
     image: webImg, 
-    description: "Design beautiful, responsive websites!", 
-    registerLink: "https://forms.gle/your-webdesign-link" 
+    description: (
+      <>
+        🚀 <strong>🌐 WEB CRAZE 2025 – Design. Innovate. Dominate..!! 🎨💻</strong> 💡 <br /><br />
+        Enigma presents WEB CRAZE 2025, the ultimate <strong>Website Designing Challenge</strong> where creativity meets technology..!! 
+        <br /><br />
+        <strong>Why Participate..??</strong>
+        <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
+          <li>🎨 Design with Impact – Build visually captivating and user-friendly websites.  </li>
+          <li>🤝 Collaborate & Compete – Team up, challenge the best, and showcase your skills.  </li>
+          <li>🏆 Win Big – Earn recognition, prizes, and the title of the best web designer! </li>
+        </ul>
+        <strong>What Awaits You..??</strong>
+        <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
+          <li>🌍 Real-World Challenges – Solve engaging problem statements with innovative web solutions. </li>
+          <li>📈 Skill Enhancement – Improve your front-end, back-end, and UI/UX expertise.  </li>
+          <li>🔗 Exclusive Opportunities – Connect with tech enthusiasts, industry professionals, and mentors. </li>
+        </ul>
+        <strong>📅 DATE:</strong> 20<sup>th</sup> March 2025 <br />
+        <strong>🕒 Timings:</strong> 11 a.m. – 1 p.m. <br />
+        <strong>📍 VENUE:</strong> Bhai Parmanand Shakarpur Campus: II, DSEU
+      </>
+    ),
+    registerLink: "https://docs.google.com/forms/u/3/d/1VnXXFmeTKVwIoha5HSCLKb2x0u-1vAZbRcY8K7EFUSI/edit?usp=forms_home&ths=true" 
   },
 ];
 

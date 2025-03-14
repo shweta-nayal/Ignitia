@@ -1,10 +1,28 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 /* Events Page */
 .events-page {
     text-align: center;
-    background-color: #0a0f1f;
+    /* background-color: #0a0f1f; */
+    background-image: url('../assets/ebg1.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+        /* Keeps background in place while scrolling */
     min-height: 100vh;
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 50px 0;
-    position: relative;
+    position:relative;
     transition: filter 0.3s ease;
 }
 
@@ -23,10 +41,11 @@
 
 /* Heading */
 .events-heading {
-    font-size: 3rem;
-    color: #d0cccc;
-    text-shadow: 3px 3px 5px rgba(178, 174, 174, 0.6);
-    margin-bottom: 40px;
+    font-size: 3.2rem;
+    color: #ffffff;
+    text-shadow: 0 0 10px #fff, 0 0 20px rgb(253, 255, 255), 0 0 30px rgb(252, 255, 255), 0 0 40px #0ff, 0 0 50px #0ff;
+    animation: soft-glow 2s infinite alternate;
+    text-align: center;
 }
 
 /* Event Container */
@@ -41,7 +60,7 @@
 
 /* Event Card */
 .event-card {
-    background: #445b6a;
+    background: #112d3f;
     color: white;
     width: 300px;
     height: 400px;
@@ -56,7 +75,7 @@
 
 .event-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 20px 30px rgba(255, 255, 255, 0.3);
 }
 
 /* Event Image */
@@ -141,7 +160,20 @@
     right: 15px;
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
-    color: white;
+    color: rgb(155, 13, 25);
+}
+
+/* Subtle glow animation */
+@keyframes soft-glow {
+    0% {
+        text-shadow: 0 0 3px rgba(255, 255, 255, 0.3),
+            0 0 6px rgba(49, 192, 192, 0.3);
+    }
+
+    100% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+            0 0 10px rgba(83, 223, 223, 0.4);
+    }
 }
