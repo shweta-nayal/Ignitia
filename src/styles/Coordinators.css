@@ -1,0 +1,86 @@
+.coordinators-container {
+    text-align: center;
+    padding: 80px 20px;
+    /* Space from navbar */
+    background: linear-gradient(135deg, #0a0f1f, #1a2a40);
+    /* background-image: url('../assets/ebg3.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: filter 0.3s ease; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coordinators-heading {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.coordinators-table {
+    width: 90%;
+    max-width: 1100px;
+    border-collapse: collapse;
+    background: rgba(30, 26, 26, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(101, 98, 98, 0.8);
+    color: rgb(255, 251, 251);
+    font-size: 1rem;
+}
+
+/* Table Borders */
+.coordinators-table th,
+.coordinators-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 3px solid rgba(205, 194, 194, 0.5);
+    /* White border */
+}
+
+/* Table Header */
+.coordinators-table th {
+    background: rgba(57, 51, 51, 0.2);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Alternating Background Colors for Each Event */
+.event-group:nth-of-type(odd) td {
+    background: rgba(125, 139, 143, 0.2);
+    /* Light Gray */
+}
+
+.event-group:nth-of-type(even) td {
+    background: rgba(151, 150, 150, 0.35);
+    /* Slightly Darker Gray */
+}
+
+/* Stronger Borders to Clearly Separate Each Event */
+.event-group td {
+    border-bottom: 2px solid white;
+}
+
+/* Hover Effect */
+.coordinators-table tr:hover td {
+    background: rgba(2, 5, 36, 0.5);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .coordinators-heading {
+        font-size: 2rem;
+    }
+
+    .coordinators-table {
+        font-size: 0.9rem;
+    }
+}

@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar"; 
 import Home from "./components/Home";
 import Events from "./components/Events";
+import Coordinators from "./components/Coordinators";
 
 function AppContent() {
   const location = useLocation();
@@ -15,6 +16,7 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/coordinators" element={<Coordinators />} />
       </Routes>
     </>
   );

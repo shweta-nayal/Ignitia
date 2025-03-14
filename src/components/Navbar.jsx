@@ -18,6 +18,7 @@ function Navbar() {
         {/* Right Side - Events Button & DSEU Logo */}
         <div className="navbar-right">
           <Link className="btn btn-outline-light" to="/events">Events</Link>
+          <Link className="btn btn-outline-light" to="/coordinators">Coordinators</Link>
           <img src={dseuLogo} alt="College Logo" className="nav-logo" />
         </div>
       </div>
