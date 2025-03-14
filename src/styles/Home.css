@@ -60,7 +60,7 @@
 /* Position the button near the bottom of the visible background */
 .button-container {
     position: absolute;
-    bottom: 8%;
+    bottom: 5%;
     /* Adjust this value to move it closer/farther from the bottom */
     width: 100%;
     display: flex;
@@ -70,11 +70,11 @@
 /* Button Styling */
 .btn-primary {
     padding: clamp(12px, 6vw, 12px) clamp(64px, 6vw, 60px);
-    font-size: clamp(1.3rem, 3vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
     font-weight: 600;
     background: linear-gradient(45deg, #e5e20d, #ff4b2b);
     border: none;
-    border-radius: 50px;
+    border-radius: 60px;
     transition: all 0.3s ease-in-out;
     text-align: center;
 }
