@@ -155,28 +155,45 @@ const eventsData = [
     image: buisnessImg, 
     description: (
       <>
-        🚀 <strong>IDEATHON 2025 – Unleash Your Innovation..!!</strong> 💡 <br /><br />
-        Enigma presents IDEATHON 2025, a platform for forward-thinking individuals to ideate, collaborate, and innovate.
+        <strong>🔥 Business Quiz: The Ultimate Challenge 🔥</strong> 💡 <br /><br />
+        📢 Get ready to quiz your way to the top! Show off your business acumen and compete with the best minds.
         <br /><br />
-        <strong>Why Participate..??</strong>
-        <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
-          <li>💡 Innovate with Purpose – Tackle global issues with groundbreaking ideas.</li>
-          <li>🤝 Collaborate & Network – Work with like-minded individuals and industry experts.</li>
-          <li>🏆 Compete & Win – Showcase your potential and earn recognition with exciting prizes.</li>
+        <strong>📚 Quiz Categories:</strong>
+        <ul style={{ listStyle: "none", paddingLeft: 90, textAlign: "left" }}>
+          <li>
+            ✅ Business & Economics 💹
+          </li>
+          <li>
+            ✅ Finance & Accounting 💰
+          </li>
+          <li>
+            ✅ Entrepreneurship & Management 🚀
+          </li>
+          <li>
+            ✅ International Business 🌍
+          </li>
         </ul>
-        <strong>What Awaits You..??</strong>
-        <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
-          <li>🌍 Impact-Driven Innovation – Create solutions with real-world applications.</li>
-          <li>📈 Skill Development – Enhance your problem-solving and analytical abilities.</li>
-          <li>🔗 Exclusive Opportunities – Gain exposure, build connections, and learn from professionals.</li>
+        <strong>🏆 Prizes & Recognition:</strong>
+        <ul style={{ listStyle: "none", paddingLeft: 90, textAlign: "left" }}>
+          <li>
+            🥇 Cash prizes for the top three teams 💵
+          </li>
+          <li>
+            🎖 Certificates for all participants 🏅
+          </li>
+          <li>
+            🏆 Trophy for the winning team 🎉
+          </li>
         </ul>
+        
         <strong>📅 DATE:</strong> 20<sup>th</sup> March 2025 <br />
-        <strong>🕒 Timings:</strong> 12 p.m. – 2 p.m. <br />
+        <strong>🕒 Timings:</strong> 12 p.m. – 1 p.m. <br />
         <strong>📍 VENUE:</strong> Bhai Parmanand Shakarpur Campus: II, DSEU
       </>
     ),
     registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSfzxzhlXimR2iBUyBFPcxiqHoLO7WYEDa8yfHvlKdcKzSaqrw/viewform" 
   },
+
   { 
     name: "ECHOES IN PIXELS", 
     image: posterImg, 
@@ -203,6 +220,7 @@ const eventsData = [
     ),
     registerLink: "https://docs.google.com/forms/d/1YhBrz5luzx43T_tJlDvfgLNWAAT0Upq0dFb4lL6QOHM/edit" 
   },
+
   { 
     name: "WEB CRAZE", 
     image: webImg, 
