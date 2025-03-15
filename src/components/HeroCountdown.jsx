@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom"; // Import for navigation
 import "../styles/HeroCountdown.css";
 
 const HeroCountdown = () => {
+    const navigate = useNavigate(); // Initialize navigation
     const eventDate = new Date("March 20, 2025 00:00:00").getTime();
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -24,7 +26,7 @@ const HeroCountdown = () => {
     useEffect(() => {
         const timer = setInterval(() => {
             setTimeLeft(calculateTimeLeft());
-        }, 2000);
+        }, 1000);
 
         return () => clearInterval(timer);
     }, []);
@@ -35,25 +37,17 @@ const HeroCountdown = () => {
             <div className="hero-content">
                 <h1>Welcome to <span>Enigma Fest 2k25</span></h1>
                 <p>The Ultimate Tech Fest – March 20th, 2025</p>
-                <button className="cta-btn">Explore Events</button>
+                <button className="cta-btn" onClick={() => navigate("/events")}>
+                    Explore Events
+                </button>
 
                 <div className="countdown">
-                    <div className="time-box">
-                        <span>{timeLeft.days}</span>
-                        <p>Days</p>
-                    </div>
-                    <div className="time-box">
-                        <span>{timeLeft.hours}</span>
-                        <p>Hours</p>
-                    </div>
-                    <div className="time-box">
-                        <span>{timeLeft.minutes}</span>
-                        <p>Minutes</p>
-                    </div>
-                    <div className="time-box">
-                        <span>{timeLeft.seconds}</span>
-                        <p>Seconds</p>
-                    </div>
+                    {Object.entries(timeLeft).map(([unit, value]) => (
+                        <div className="time-box" key={unit}>
+                            <span>{value}</span>
+                            <p>{unit.charAt(0).toUpperCase() + unit.slice(1)}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

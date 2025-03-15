@@ -69,18 +69,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     margin-top: 30px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 15px 0;
 }
 
 /* Styling for Countdown Boxes */
 .time-box {
     background: rgba(255, 255, 255, 0.15);
-    padding: 20px;
-    border-radius: 12px;
+    padding: 15px;
+    border-radius: 10px;
     text-align: center;
-    width: 90px;
-    font-size: 1.8rem;
+    width: 80px;
+    font-size: 1.6rem;
     font-weight: bold;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.3);
@@ -97,7 +102,7 @@
 }
 
 .time-box p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-top: 5px;
     color: #cdaa1e;
     font-weight: bold;
@@ -106,15 +111,55 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
     }
 
     .countdown {
-        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 8px;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 0 10px;
     }
 
     .time-box {
-        width: 75px;
-        font-size: 1.5rem;
+        width: 70px;
+        font-size: 1.4rem;
+        padding: 12px;
+    }
+
+    .time-box p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .countdown {
+        justify-content: flex-start;
+        padding: 0 15px;
+        gap: 6px;
+        overflow-x: auto;
+    }
+
+    .time-box {
+        width: 65px;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .time-box p {
+        font-size: 0.7rem;
     }
 }
