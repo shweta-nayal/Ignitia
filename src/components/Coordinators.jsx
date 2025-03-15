@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Coordinators.css";
 
 const coordinatorsData = [
-  { id: 1, event: "THINK-A-TON", coordinators: ["Shweta Nayal", "Ginni", "Sudhanshu"], phone: ["9013290305", "9667063972", "8368454457"] },
+  { id: 1, event: "THINK-A-TON", coordinators: ["Shweta", "Ginni", "Sudhanshu"], phone: ["9013290305", "9667063972", "8368454457"] },
   { id: 2, event: "BGMI", coordinators: ["Chandan", "Deepak", "Pranchi"], phone: ["9810307402", "8081214710", "9560286541"] },
   { id: 3, event: "ECHOES IN PIXELS", coordinators: ["Satyam", "Asma", "Mohit"], phone: ["9771111876", "9899638477", "7291007673"] },
   { id: 4, event: "QUIZORA", coordinators: ["Pranchi", "Swastika", "Ashish"], phone: ["9560286541", "8383061974", "8851045870"] },
