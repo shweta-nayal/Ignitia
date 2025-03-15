@@ -234,6 +234,7 @@ const eventsData = [
 
 const Events = () => {
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   return (
     <div className={`events-page ${selectedEvent ? "blurred" : ""}`}>
@@ -241,7 +242,7 @@ const Events = () => {
       <div className="events-container">
         {eventsData.map((event, index) => (
           <div key={index} className="event-card">
-            <img src={event.image} alt={event.name} className="event-image" />
+            <img src={event.image} alt={event.name} className="event-image" onClick={() => setSelectedImage(event.image)}/>
             <h2>{event.name}</h2>
             <button onClick={() => setSelectedEvent(event)}>Register</button>
           </div>
@@ -249,9 +250,20 @@ const Events = () => {
       </div>
 
       {/* Pop-up Window */}
+      {selectedImage && (
+        <div className="popup-overlay" onClick={() => setSelectedImage(null)}>
+          <div className="popup-content-img" onClick={(e) => e.stopPropagation()}>
+            <button className="close-btn" onClick={() => setSelectedImage(null)}>
+              &times;
+            </button>
+            <img src={selectedImage} alt="Popup" className="popup-image" />
+          </div>
+        </div>
+      )}
+
       {selectedEvent && (
-        <div className="popup">
-          <div className="popup-content">
+        <div className="popup-event">
+          <div className="popup-content-event">
             <button className="close-button" onClick={() => setSelectedEvent(null)}>✖</button>
             <h2>{selectedEvent.name}</h2>
             <p>{selectedEvent.description}</p>

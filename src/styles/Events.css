@@ -88,6 +88,8 @@ body {
     object-fit: cover;
     border-top-left-radius: 11px;
     border-top-right-radius: 11px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .event-card h2 {
@@ -113,29 +115,29 @@ body {
 }
 
 /* Popup Window */
-.popup {
+.popup-event {
     position: fixed;
-    top: 50%;
+    top: 22%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -10%);
     background: white;
     padding: 20px;
-    width: 80%;
-    max-width: 750px;
+    width: 60%;
+    max-width: 95vw;
     border-radius: 10px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
     text-align: center;
     z-index: 1001;
 }
 
-.popup-content h2 {
+.popup-content-event h2 {
     margin-bottom: 20px;
     color: #1e3a8a;
     font-size: 2em;
     font-weight: 700;
 }
 
-.popup-content p {
+.popup-content-event p {
     font-size: 1.1rem;
     margin-bottom: 25px;
     color: #333;
@@ -169,41 +171,156 @@ body {
     color: rgb(155, 13, 25);
 }
 
+/* Popup Style for Image */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 10px;
+}
+
+.popup-content-img {
+    position: relative;
+    background: #000000;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 80%;
+    max-height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-image {
+    width: 90%;
+    max-width: 600px;
+    max-height: 70vh;
+    border-radius: 10px;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: #ed2323;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #ff0000;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .popup-content-img {
+        max-width: 88%;
+        max-height: 85%;
+        padding: 4px;
+        margin: 0;
+    }
+
+    .popup-image {
+        max-width: 80vw;
+        max-height: 65vh;
+    }
+
+    .close-btn {
+        font-size: 66px;
+        top: 5px;
+        right: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .popup-content-img {
+        max-width: 90%;
+        max-height: 90%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .popup-image {
+        max-width: 95vw;
+        max-height: 60vh;
+    }
+
+    .close-btn {
+        font-size: 52px;
+        top: 5px;
+        right: 5px;
+    }
+}
+
 /* Responsive Popup */
 @media screen and (max-width: 768px) {
     .events-page {
         background-attachment: scroll;
         /* Prevents glitch on mobile */
         background-size: 100% auto;
-        /* Adjusts size to avoid cutting */
     }
     
-    .popup {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .popup-content h2 {
-        font-size: 1.8em;
-    }
-
-    .popup-content p {
-        font-size: 1rem;
-    }
+        .popup-event {
+            width: 75%;
+            top: 15%;
+            max-width: 85vw;
+            padding: 15px;
+        }
+    
+        .popup-content-event h2 {
+            font-size: 1.8em;
+        }
+    
+        .popup-content-event p {
+            font-size: 1rem;
+        }
+    
+        .register-button {
+            padding: 10px 15px;
+            font-size: 0.9rem;
+        }
+    
+        .close-button {
+            font-size: 28px;
+        }
 }
 
+/* Mobile Devices (max-width: 480px) */
 @media screen and (max-width: 480px) {
-    .popup {
-        width: 95%;
-        padding: 10px;
+    .popup-event {
+        width: 90%;
+        top: 23%;
+        left: 50%;
+        max-width: 80vw;
+        padding: 12px;
     }
 
-    .popup-content h2 {
+    .popup-content-event h2 {
         font-size: 1.5em;
     }
 
-    .popup-content p {
+    .popup-content-event p {
         font-size: 0.9rem;
+    }
+
+    .register-button {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+
+    .close-button {
+        font-size: 25px;
     }
 }
 
@@ -211,11 +328,11 @@ body {
 @keyframes soft-glow {
     0% {
         text-shadow: 0 0 3px rgba(255, 255, 255, 0.3),
-            0 0 6px rgba(49, 192, 192, 0.3);
+            0 0 6px rgba(49, 192, 192, 0.5);
     }
 
     100% {
         text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
-            0 0 10px rgba(83, 223, 223, 0.4);
+            0 0 10px rgba(83, 223, 223, 0.7);
     }
 }
