@@ -125,6 +125,7 @@ body {
     width: 60%;
     max-width: 95vw;
     border-radius: 10px;
+    overflow-y: auto;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
     text-align: center;
     z-index: 1001;
@@ -208,13 +209,13 @@ body {
 /* Close Button */
 .close-btn {
     position: absolute;
-    top: 5px;
-    right: 10px;
+    top: 1px;
+    right: 4px;
     background: transparent;
     border: none;
     font-size: 40px;
     cursor: pointer;
-    color: #ed2323;
+    color: #d10000;
     transition: color 0.3s ease;
 }
 
@@ -238,8 +239,8 @@ body {
 
     .close-btn {
         font-size: 66px;
-        top: 5px;
-        right: 8px;
+        top: 1px;
+        right: 4px;
     }
 }
 
@@ -258,8 +259,8 @@ body {
 
     .close-btn {
         font-size: 52px;
-        top: 5px;
-        right: 5px;
+        top: 1px;
+        right: 4px;
     }
 }
 
