@@ -68,16 +68,19 @@ body {
 }
 
 .btn-outline-light {
-    padding: 8px 18px;
+    padding: 5px 15px;
     font-size: 1.5rem;
     color: whitesmoke;
-    border-radius: 25px;
+    text-decoration: none;
+    border-radius: 30px;
     transition: all 0.3s ease-in-out;
 }
 
 .btn-outline-light:hover {
-    color: #c5a842;
-    transform: scale(1.1);
+    /* color: #c5a842; */
+    color: black;
+    transform: scale(1.04);
+    background-color: #d1b654;
 }
 
 /* Navbar Logos */
