@@ -15,14 +15,14 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: url("../assets/banner.png") no-repeat center center;
+    background: url("../assets/banner1.jpg") no-repeat center center;
     background-size: cover;
     filter: blur(10px);
     z-index: -2;
 }
 
 /* Main background image */
-.background {
+/* .background {
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -31,7 +31,7 @@
     object-fit: contain;
     opacity: 0;
     animation: fadeIn 1.2s ease-in-out forwards;
-}
+} */
 
 /* Overlay for content */
 .overlay {

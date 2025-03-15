@@ -11,6 +11,12 @@
     /* Ensures scrolling if needed */
 }
 
+body {
+    touch-action: auto;  /* Ensures pinch-to-zoom works */
+    overflow-x: auto;   /* Prevents content from getting cut off */
+    zoom: 1;  /* Ensures default zoom level */
+}
+
 .coordinators-heading {
     font-size: 2.5rem;
     color: #ffffff;
@@ -24,7 +30,8 @@
     width: 100%;
     overflow-x: auto;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    -webkit-overflow-scrolling: touch;  /* Smooth scrolling on iOS */
 }
 
 /* Table */
@@ -48,9 +55,7 @@
     padding: 12px 15px;
     text-align: center;
     border: 3px solid rgba(205, 194, 194, 0.5);
-    /* White border */
-    white-space: nowrap;
-    /* Prevents text from breaking */
+    white-space: nowrap;   /* Prevents text from breaking */
 }
 
 /* Table Header */
@@ -63,12 +68,10 @@
 /* Alternating Background Colors for Each Event */
 .event-group:nth-of-type(odd) td {
     background: rgba(125, 139, 143, 0.2);
-    /* Light Gray */
 }
 
 .event-group:nth-of-type(even) td {
     background: rgba(151, 150, 150, 0.35);
-    /* Slightly Darker Gray */
 }
 
 /* Stronger Borders to Clearly Separate Each Event */
@@ -83,7 +86,7 @@
     cursor: pointer;
 }
 
-/* 🔹 Responsive Design */
+/* Responsive Design */
 @media (max-width: 1024px) {
     .coordinators-table {
         font-size: 0.9rem;
@@ -117,6 +120,7 @@
     }
 }
 
+/* Allows better zoom handling */
 @media (max-width: 480px) {
     .coordinators-heading {
         font-size: 1.8rem;
