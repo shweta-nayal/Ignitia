@@ -8,6 +8,7 @@ import posterImg from "../assets/poster.jpeg";
 import quizImg from "../assets/quiz.jpeg";
 import spellbeeImg from "../assets/spellbee.jpeg";
 import buisnessImg from "../assets/buisness.jpeg";
+import dseuTankImag from "../assets/tank.jpeg";
 
 const eventsData = [
   { 
@@ -247,6 +248,35 @@ const eventsData = [
       </>
     ),
     registerLink: "https://docs.google.com/forms/u/3/d/1VnXXFmeTKVwIoha5HSCLKb2x0u-1vAZbRcY8K7EFUSI/edit?usp=forms_home&ths=true" 
+  },
+
+  { 
+    name: "DSEU TANK", 
+    image: dseuTankImag, 
+    description: (
+      <>
+        🚀 <strong> Unleash Your Entrepreneurial Spirit..!!</strong> 💡 <br /><br />
+        Are you ready to turn your business idea into a reality? DSEU TANK is your opportunity to pitch innovative business ideas and compete for funding & mentorship! 
+        <br /><br />
+        <strong>🎤 COMPETITION FORMAT:</strong>
+        <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
+          <li>🏆 Pitch your business idea to a panel of investors & industry experts.  </li>
+          <li>🤝 Top selected participants receive funding & mentorship to launch their ventures. </li>
+          <li>📜 Open to all students, alumni & faculty members of DSEU.  </li>
+          <li>🤝 Teams can have 1-5 members. </li>
+        </ul>
+        <strong>🏆 PRIZES:</strong>
+        <ul style={{ listStyle: "none", paddingLeft: 40, textAlign: "left" }}>
+          <li>🌍 Funding & certification</li>
+          <li>📈 Mentorship from industry experts </li>
+          <li>🔗 Networking opportunities with investors & entrepreneurs. </li>
+        </ul>
+        <strong>📅 DATE:</strong> 20<sup>th</sup> March 2025 <br />
+        <strong>🕒 Timings:</strong> 11 a.m. – 1 p.m. <br />
+        <strong>📍 VENUE:</strong> Bhai Parmanand Shakarpur Campus: II, DSEU
+      </>
+    ),
+    registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSdD9CEAXUrIAcNsLg1dFHZBN7n6aViXs1ReBP0h6YpZQIfmAw/viewform" 
   },
 ];
 
